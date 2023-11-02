@@ -1,0 +1,8 @@
+{
+  "label": "P.O.S Cashier's Interface",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Cashier's operations using the POS"
+  }
+}

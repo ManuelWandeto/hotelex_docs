@@ -1,0 +1,8 @@
+{
+  "label": "Point of Sale",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "The ins and outs of the point of sale interface"
+  }
+}
