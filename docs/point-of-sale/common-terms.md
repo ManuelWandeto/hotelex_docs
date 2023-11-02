@@ -21,4 +21,4 @@ In the course of using the software you may come across the following terms:
 
 7. Counter - A section of the business that serves customer orders e.g the bar (serving drink orders) or the kitchen (serving food orders)
 
-7. Forwarding a Bill - Refers to sending a bill to the cashier for payment verification, Once verified, the cashier clears the salesperson from the bill amount.
+7. Forwarding a Bill - Refers to sending a bill to the cashier for payment verification, Once verified, the cashier clears the bill from the waiter's account and the bill is considered paid.

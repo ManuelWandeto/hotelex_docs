@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Returns
@@ -15,6 +15,6 @@ If a return request is disapproved, the 'return' button seizes to appear for the
 
 A super-administrator can have both level 1 and level 2 approval rights at which point they can approve or disapprove a return request all by themselves.
 
-An order that is locked with lock-status 'return' is highlighted in pink while and order locked with lock-status 'forwardded' is highlighted in yellow.
+An order that is locked with lock-status 'return' is highlighted in pink while and order locked with lock-status 'forwarded' is highlighted in yellow.
 
 ![The return process illustration](/img/returns_process.png)

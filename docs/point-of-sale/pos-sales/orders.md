@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Making an Order
@@ -7,6 +7,8 @@ sidebar_position: 1
 ## Selecting A Counter
 
 If counters have been setup, the moment you login, a dialog will appear for you to pick a counter to which you want to post your order, e.g bar or kitchen counters. This is where your order will be printed.
+
+You can change the counter anytime using the 'change counter' button on your left.
 
 ## Orders List View
 
@@ -28,7 +30,7 @@ Each row in the active orders view has a color representing the order's current 
 
 White or grey has no significant meaning, it's just a visual enhancement to ensure you can easily see a row to the end.
 
-A <span style={{color: 'yellow'}}>Bright yellow</span> highlight means the order is locked because it has been forwardded but not cleared by the cashier.  
+A <span style={{color: 'yellow'}}>Bright yellow</span> highlight means the order is locked because it has been forwarded but not cleared by the cashier.  
 
 A <span style={{backgroundColor: "#666666", color: 'white', padding: '2px 8px'}}>Dark grey</span> highlight means the order is Locked because its final bill has been printed.
 
@@ -55,16 +57,16 @@ The 'Chk' column shows the *Check/round number* that the item was printed as a p
 ## Adding an item to an order
 
 Once you have opened a new order, you can select it and begin to add items to it. 
-![P.O.S item categories list](/img/pos_item_categories.jpg)
+![P.O.S item categories list](/img/item_categories.PNG)
 
 Browse through the available P.O.S item categories on the top left hand side. When you click on a category you are presented with the items within it, sorted in alphabetical order. When you select an item, its name appears in the [preparation area](#the-preparation-area).
-![P.O.S items](/img/pos_items.jpg)
+![P.O.S items](/img/category_items.PNG)
 
 *Please note: It's beneficial to know what items are in what categories. Having to go through all categories to find an item is a slow, inefficient practice that will have you spend a lot of time making an order (slowing down everyone else waiting to use the POS terminal).*
 
 ### The preparation area
 
-![the preparation area](/img/preparation_area.jpg)
+![the preparation area](/img/preparation_area.PNG)
 
 This is the area where you confirm the specifics of the order item such as quantity and temperature (sold or warm) before it is added to the order.  
 If the quantity is in fractional units e.g for butchery items, use the 'set qty' button to set the precise quantity.
@@ -92,6 +94,8 @@ In the event of something happening to the final bill and you have to print anot
 
 The system can however be configured to allow unlimited printing of bills.
 
+![Order checks view](/img/order_checks_view.PNG)
+
 ## Forwardding bills for clearance
 
 Inorder to clear a bill from your unpaid amount, you need to forward the bill to the cashier once you have received payment for the bill. The cashier's work is to verify that the payment has been received. Then and only then can they clear the bill from the waiter's account.
@@ -100,8 +104,7 @@ In some configurations, the waiter cannot print the bill without first receiving
 
 In most common configurations however, to forward a bill, select the order from the active orders view and click the 'forward payment' button, this will pop up the payment details window allowing you to select a [payment method](#payment-methods).
 
-![The payment details window](/img/payment_details.jpg)
-![The payment details window](/img/payment_details_amount.jpg)
+![The payment details window](/img/payment_details.PNG)
 
 ## Payment Methods
 
