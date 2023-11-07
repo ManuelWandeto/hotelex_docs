@@ -26,7 +26,7 @@ The initial setup process involves our technicians installing or configuring a s
   - These are touchscreen machines on which hotelex will be installed, it is used by your staff to post the orders they have received and so we recommend having as many as proportional to your average order volume.
 
 - One or more printers
-  - These are used to print your order bills through the system. We recommend having one in each department where your orders are received and served.
+  - These are used to print orders and bills through the system. We recommend having one in each department/counter where your orders are received and served.
 
 - Networking equipment
   - The machines mentioned above communicate via a LAN network using LAN cables connected to a network switch that serves your network. Our technicians will analyze your site and recommend a network setup for your needs.
