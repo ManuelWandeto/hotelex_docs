@@ -112,11 +112,11 @@ Most common methods of payment are cash, mpesa and pdq codes (payment with bank 
 
 ### M-pesa
 
-For mpesa, the system is either intergrated with mpesa or not.
+Depending on the configuration, there is a set max number of digits that the system expects (usually 4 digits). In that case, only type the last 4 digits of the mpesa code in the payment details window.
 
-If mpesa is not intergrated into the system, you cannot use the same mpesa code to forward multiple bills except by using either an (*) or a (#) character as the first digit of the code entered, The code also has to have been already registered into the system by the cashier.
+The system is either intergrated with mpesa or not. If not, you can forward bills using any code but the cashier will have to verify them inorder to clear your bills. You also **cannot** use the same mpesa code to forward multiple bills except by using either an (*) or a (#) character as the first digit of the code entered.
 
-If the system is intergrated (which is recommended for security and convenience purposes), you can use the same mpesa code to forward multiple bills so long as the code contains sufficient funds.
+If it is intergrated (which is recommended for security and convenience purposes), you can use the same mpesa code to forward multiple bills so long as the code contains sufficient funds.
 
 ### PDQ
 
