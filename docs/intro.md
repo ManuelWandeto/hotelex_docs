@@ -20,7 +20,7 @@ The initial setup process involves our technicians installing or configuring a s
 ### What you'll need
 
 - A server machine:
-  - This is a regular PC that will store your local data and facilitate sales through the POS stations. It is recommended to have adequate performance as it will serve all your orders.
+  - This is a PC that will store your local data and facilitate sales through the POS stations. It is recommended to have adequate performance as it will serve all your orders.
 
 - One or more P.O.S machines
   - These are touchscreen machines on which hotelex will be installed, it is used by your staff to post the orders they have received and so we recommend having as many as proportional to your average order volume.
