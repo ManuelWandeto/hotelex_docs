@@ -22,7 +22,9 @@ When a customer with an existing order in the system makes an order for other it
 
 ## Active orders view
 
-Orders opened show up in this view, each row shows the order number, order amount, the time the order was opened and whether the order is locked (if it has been [forwadded](#forwardding-bills-for-clearance) but not yet *cleared*)
+Orders opened show up in this view, each row shows the order number, order amount, the time the order was opened, whether or not the order is locked, why it's locked and a brief narration that you can put.
+
+![Active orders view](/img/active_orders_view.PNG)
 
 ### Order status - color codes
 
@@ -30,11 +32,11 @@ Each row in the active orders view has a color representing the order's current 
 
 White or grey has no significant meaning, it's just a visual enhancement to ensure you can easily see a row to the end.
 
-A <span style={{color: 'yellow'}}>Bright yellow</span> highlight means the order is locked because it has been forwarded but not cleared by the cashier.  
+A <span style={{backgroundColor: 'yellow', color: 'black', padding: '2px 8px'}}>Bright yellow</span> highlight means the order is locked because it has been forwarded but not cleared by the cashier.  
 
-A <span style={{backgroundColor: "#666666", color: 'white', padding: '2px 8px'}}>Dark grey</span> highlight means the order is Locked because its final bill has been printed.
+A <span style={{backgroundColor: "#666666", color: 'white', padding: '2px 8px'}}>Dark grey</span> highlight means the order's final bill has been printed.
 
-A <span style={{color: 'pink', padding: '2px 8px'}}>Pink</span> highlight means the order is Locked because its in the process of a return.
+A <span style={{backgroundColor: 'pink', color: 'black', padding: '2px 8px'}}>Pink</span> highlight means the order is Locked because its in the process of a return.
 
 **You cannot add items to a locked bill**. The locked column of the row will show 'YES' and the 'lock-status' column describes the reason the order is locked.
 
@@ -48,11 +50,13 @@ Shows the items inside a selected order.
 
 Items that have been printed in a round appear highlighted in yellow and the 'printed' column reads 'YES'.
 
-Once an order item is [printed](#printing-your-order) it cannot be removed from the order unless returned by approval from the manager.
+Once an order item is [printed](#printing-your-order) it cannot be removed from the order unless [returned](./returns) by approval from the manager.
 
 Order items not printed appear in white or grey and can be removed freely from the order in case they were added by mistake.
 
 The 'Chk' column shows the *Check/round number* that the item was printed as a part of. If the item has not been printed, this column reads 0.
+
+*Locked orders do not show their items.*
 
 ## Adding an item to an order
 
@@ -86,44 +90,13 @@ The total of unpaid orders amount also includes the **unprinted** or **forwarded
 
 ### Order Checks View
 
-In this view, you can see a list of the orders that you have printed that day (A cashier can view checks printed by all waitresses or any that they select)
+In this view, you can see a list of the orders that you have printed that day [(A cashier can view checks printed by all waitresses or any that they select)](../pos-cashier/till_summary#view-waiter-checks)
 
 When an order is first printed, it shows up as 'round 1', you can add other items onto it and print the same order again (this time as round 2) and so on, until the final bill is printed, After that, the order becomes locked and no more items can be added. You now have to forward the bill.
 
 In the event of something happening to the final bill and you have to print another, Request it from your admin, only they can reprint the final bill (by going to their order checks view, clicking on your final bill and tapping 'YES')
 
-The system can however be configured to allow unlimited printing of bills.
+The system can however be [configured](../configuration#dont_limit_bills_printed) to allow unlimited printing of bills.
 
 ![Order checks view](/img/order_checks_view.PNG)
 
-## Forwardding bills for clearance
-
-Inorder to clear a bill from your unpaid amount, you need to forward the bill to the cashier once you have received payment for the bill. The cashier's work is to verify that the payment has been received. Then and only then can they clear the bill from the waiter's account.
-
-In some configurations, the waiter cannot print the bill without first receiving the payment. In the case of such, the printing is also the forwarding and so the payment details window pops up before the printing.
-
-In most common configurations however, to forward a bill, select the order from the active orders view and click the 'forward payment' button, this will pop up the payment details window allowing you to select a [payment method](#payment-methods).
-
-![The payment details window](/img/payment_details.PNG)
-
-## Payment Methods
-
-Most common methods of payment are cash, mpesa and pdq codes (payment with bank cards). You can combine these payment methods in the payment details window.
-
-### M-pesa
-
-Depending on the configuration, there is a set max number of digits that the system expects (usually 4 digits). In that case, only type the last 4 digits of the mpesa code in the payment details window.
-
-The system is either intergrated with mpesa or not. If not, you can forward bills using any code but the cashier will have to verify them inorder to clear your bills. You also **cannot** use the same mpesa code to forward multiple bills except by using either an (*) or a (#) character as the first digit of the code entered.
-
-If it is intergrated (which is recommended for security and convenience purposes), you can use the same mpesa code to forward multiple bills so long as the code contains sufficient funds.
-
-### PDQ
-
-For bank cards, the system can be configured to either allow forwarding bills with pdq codes to be validated later by the cashier, or to require that the code be registered in the system by the cashier before it can be used to forward a bill. 
-
-If it allows non-validated pdq codes, you can forward a bill using a pdq code that is yet be verified. In this case, you should present the physical pdq receipt to the cashier for validation, then and only then will the cashier clear your bill.
-
-Otherwise, the cashier has to first register the pdq code into the system (They will do so **only if** they have received the physical transaction receipt). Then and only then can the code be used to forward a bill.
-
-The former can make payment operations go faster while the latter though safer can slow down the process (especially if the cashier is also the salesman in a high-traffic type of environment).

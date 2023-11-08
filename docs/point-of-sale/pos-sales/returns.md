@@ -18,3 +18,11 @@ A super-administrator can have both level 1 and level 2 approval rights at which
 An order that is locked with lock-status 'return' is highlighted in pink while and order locked with lock-status 'forwarded' is highlighted in yellow.
 
 ![The return process illustration](/img/returns_process.png)
+
+## How to return an item
+
+First select the order and then the item (provided the order is **not** locked), then click on the 'return' button. The following dialog should appear:
+
+![Return dialog](/img/return_dialog.PNG)
+
+Set the quantity of the item to return and select a reason for return, then confirm. Your order will then be locked as the return awaits approval.

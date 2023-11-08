@@ -5,7 +5,7 @@ sidebar_label: Payment Codes
 
 # PDQ Codes
 
-For PDQ payments, the system can be configured to either require that the pdq codes be first registered into the system before it can be used to forward bills, or to allow forwarding bills with any code that will be validated later before clearing the bill.
+For PDQ payments, the system can be [configured](../configuration#allow_forward_mpesa_pdq_for_later_validation) to either require that the pdq codes be first registered into the system before it can be used to forward bills, or to allow forwarding bills with any code that will be validated later before clearing the bill.
 
 If the former is true, then waiters can forward bills with any code they input, but they should present the physical pdq receipt to you for validation before you clear their bill.
 
@@ -25,7 +25,7 @@ Enter the code and amount and save, now the code can be used by waiters to forwa
 
 ## How to view codes
 
-Go to 'My view' and click on 'View mpesa codes'
+If the [configuration allows it](../configuration#allow_cashier_access_mpesa_codes), you can view all the codes registered in the system and their claim status. Go to 'My view' and click on 'View mpesa codes'
 
 ![Cashier's view](/img/cashier_view.PNG)
 
@@ -33,11 +33,13 @@ Which will bring up the added codes report
 
 ![Cashier's view](/img/added_codes_report.PNG)
 
+Double click on a code to view its amount and claimed amounts at the bottom of the window.
+
 Codes that are fully claimed (i.e. used in forwarding bills) will appear in <span style={{backgroundColor: "yellow", color: 'black', padding: '2px 8px'}}>yellow</span>, 
 
 Unclaimed codes will appear in <span style={{backgroundColor: "green", color: 'white', padding: '2px 8px'}}>green</span>,  
 
-Partially claimed codes will appear in <span style={{backgroundColor: "pink", color: 'black', padding: '2px 8px'}}>pink</span>. 
+Partially claimed codes will appear in <span style={{backgroundColor: "pink", color: 'black', padding: '2px 8px'}}>pink</span>.  
 
 *If mpesa is integrated in the system, transaction codes from customers are automatically added into the system and they show up here.*
 

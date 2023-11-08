@@ -57,3 +57,9 @@ To do this, from the waiter's individual forwarded bills window, click on the bi
 ![Reversing a forwarded bill](/img/bill_reversal.PNG)
 
 *When you reverse a bill, it goes back to the waiter's account as an unforwarded bill allowing the waiter to forward again.*
+
+## Forward on behalf of waiter
+
+If you have the payment details for a waiter's unforwarded bill, you can forward the bill on their behalf. Simply select the waiter and the order in their [active orders view](../pos-sales/orders#active-orders-view) and click the 'forward bill' button on the bottom-right side of your interface.
+
+*You cannot forward a bill without printing it first.*
