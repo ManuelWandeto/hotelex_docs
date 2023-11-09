@@ -1,9 +1,9 @@
 ---
-sidebar-position: 3
+sidebar-position: 5
 sidebar-label: Forwarding bills
 ---
 
-# Forwardding bills
+# Forwarding bills
 
 Inorder to clear a bill from a waiter's account, the bill need to be forwarded to the cashier. Depending on the [configuration](./configuration#waiter_requests_payment), this can be done by the waiter or the cashier or both. In some settings the waiter is able to forward the bill to the cashier while in others the cashier forwards the bill to themselves on behalf of the waiter. The cashier's work is to verify that the payment has been received. Then and only then can they clear the bill from the waiter's account.
 

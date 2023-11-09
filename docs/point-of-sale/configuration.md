@@ -16,7 +16,16 @@ This is the maximum length of an mpesa code expected in the payment details wind
 
 ## Allow_waiter_to_split_bill
 
-By default, only the cashier can split a bill into multiple orders using the 'move-item' button. When you enable this option, the waiter is allowed to do so too. Make sure to also enable the option 'show_split_button' so that the 'move-item' button appears when you select an item in an order.
+Allows a waiter to move items across orders. Make sure to also enable the option [show_split_button](#show_split_button) so that the 'move-item' button appears when you select an item in an order.
+
+![Move item window](/img/splitting_bill.PNG)
+*Only **printed** items can be moved*
+
+## Show_split_button
+
+Adds a 'move-item' button to the interface that appears when a printed order item is selected.
+
+![Move item button](/img/move_item_btn.PNG)
 
 ## Allow_forward_mpesa_pdq_for_later_validation
 
@@ -39,6 +48,8 @@ This is set when mpesa has been intergrated with the system. It disallows the us
 ## allow_waiter_to_print_bill
 
 This allows the waiter to print a final bill for an order. It adds the 'final bill' button to the waiter's interface.
+
+![Final bill button](/img/final_bill.PNG)
 
 ## Dont_limit_bills_printed
 

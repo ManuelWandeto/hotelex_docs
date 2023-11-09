@@ -50,7 +50,7 @@ Shows the items inside a selected order.
 
 Items that have been printed in a round appear highlighted in yellow and the 'printed' column reads 'YES'.
 
-Once an order item is [printed](#printing-your-order) it cannot be removed from the order unless [returned](./returns) by approval from the manager.
+Once an order item is [printed](#printing-your-order) it cannot be removed from the order unless [returned](../returns) by approval from the manager.
 
 Order items not printed appear in white or grey and can be removed freely from the order in case they were added by mistake.
 
