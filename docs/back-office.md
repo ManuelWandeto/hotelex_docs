@@ -21,7 +21,7 @@ The key capabilities offered through the back office include:
 
 - Report Generation - Compiling and exporting a range of operational and analytical reports.
 
-- System Administration - Performing functions like backups, restoring data, updates, monitoring for errors etc.
+<!-- - System Administration - Performing functions like backups, restoring data, updates, monitoring for errors etc. -->
 
 <!-- - Customization - Tweaking system parameters, custom fields, user interface elements to suit specific business needs. -->
 
