@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Departments
 
 Hotelex incorporates the concept of departments to enable businesses to organize their operations into logical units.
