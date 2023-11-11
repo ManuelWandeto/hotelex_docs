@@ -1,5 +1,6 @@
 ---
 sidebar_label: Users
+sidebar_position: 3
 ---
 
 # Register Users
