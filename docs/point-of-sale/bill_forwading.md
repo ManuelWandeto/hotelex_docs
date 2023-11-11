@@ -34,3 +34,11 @@ If it allows non-validated pdq codes, you can forward a bill using a pdq code th
 Otherwise, the cashier has to first register the pdq code into the system (They will do so **only if** they have received the physical transaction receipt). Then and only then can the code be used to forward a bill.
 
 The former can make payment operations go faster while the latter though safer can slow down the process (especially if the cashier is also the salesman in a high-traffic type of environment).
+
+### Discount code
+
+Discount codes in the system are [generated](../admin-panel/discounts#how-to-generate-discounts) by authorised users and can be used for POS bills.
+
+Unlike other payment methods, bills paid with discount codes require no verification or clearance by the cashier. Discount codes automatically clear the bill if the amount covers the total bill amount.
+
+*Note: You can only use a discount code for one bill*
