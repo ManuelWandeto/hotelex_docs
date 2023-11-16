@@ -15,7 +15,7 @@ You can click on any department to see the sales made by each waiter in that dep
 
 ## View Waiter Checks
 
-Unlike a waiter's [order checks view](../pos-sales/orders.md#order-checks-view), your's can show soft copy checks of any or all waiters.
+Unlike a waiter's [order checks view](../pos-sales/orders#order-checks-view), your's can show soft copy checks of any or all waiters.
 
 Click on the 'Order checks view' button, you will be asked whether you want to see checks for all waiters or the one that you have selected in your live summary.
 
