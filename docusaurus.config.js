@@ -45,7 +45,10 @@ const config = {
           editUrl:
             'https://github.com/ManuelWandeto/hotelex_docs/tree/master/',
         },
-        blog: false
+        blog: false,
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')]
+        }
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
