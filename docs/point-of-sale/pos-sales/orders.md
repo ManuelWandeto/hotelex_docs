@@ -32,15 +32,15 @@ Each row in the active orders view has a color representing the order's current 
 
 White or grey has no significant meaning, it's just a visual enhancement to ensure you can easily see a row to the end.
 
-A <span style={{backgroundColor: 'yellow', color: 'black', padding: '2px 8px'}}>Bright yellow</span> highlight means the order is locked because it has been forwarded but not cleared by the cashier.  
+A <Highlight bg="yellow" color="black">Bright yellow</Highlight> highlight means the order is locked because it has been forwarded but not cleared by the cashier.  
 
-A <span style={{backgroundColor: "#666666", color: 'white', padding: '2px 8px'}}>Dark grey</span> highlight means the order's final bill has been printed.
+A <Highlight bg="#666666" color="white">Dark grey</Highlight> highlight means the order's final bill has been printed.
 
-A <span style={{backgroundColor: 'pink', color: 'black', padding: '2px 8px'}}>Pink</span> highlight means the order is Locked because its in the process of a return.
+A <Highlight bg="pink" color="black">Pink</Highlight> highlight means the order is locked because its in the process of a return.
 
 **You cannot add items to a locked bill**. The locked column of the row will show 'YES' and the 'lock-status' column describes the reason the order is locked.
 
-The currently selected/active row is highlighted in <span style={{color: "blue"}}>blue</span>. If you add new order items, they will be added to this order. If you print the bill, any of the order's items that have not already been printed will be printed. It is also the order that is shown at the Top.
+The currently selected/active row is highlighted in <Highlight bg="blue" color="white">blue</Highlight>. If you add new order items, they will be added to this order. If you print the bill, any of the order's items that have not already been printed will be printed. It is also the order that is shown at the Top.
 
 When you select an order, you will be able to view its items in the [order items view](#order-items-view) below.
 
