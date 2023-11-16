@@ -1,0 +1,30 @@
+.overlay {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: contain;
+    z-index: 9999;
+}
+
+.closeOverlay {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+    color: whitesmoke;
+}
+.closeOverlay:hover {
+    background: whitesmoke;
+    color: black;
+    transform: scale(1.1);
+}
