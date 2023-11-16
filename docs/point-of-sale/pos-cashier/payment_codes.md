@@ -35,11 +35,11 @@ Which will bring up the added codes report
 
 Double click on a code to view its amount and claimed amounts at the bottom of the window.
 
-Codes that are fully claimed (i.e. used in forwarding bills) will appear in <span style={{backgroundColor: "yellow", color: 'black', padding: '2px 8px'}}>yellow</span>, 
+Codes that are fully claimed (i.e. used in forwarding bills) will appear in <Highlight bg="yellow" color="black">yellow</Highlight>, 
 
-Unclaimed codes will appear in <span style={{backgroundColor: "green", color: 'white', padding: '2px 8px'}}>green</span>,  
+Unclaimed codes will appear in <Highlight bg="green" color="white">green</Highlight>,  
 
-Partially claimed codes will appear in <span style={{backgroundColor: "pink", color: 'black', padding: '2px 8px'}}>pink</span>.  
+Partially claimed codes will appear in <Highlight bg="pink" color="black">pink</Highlight>.  
 
 *If mpesa is integrated in the system, transaction codes from customers are automatically added into the system and they show up here.*
 
