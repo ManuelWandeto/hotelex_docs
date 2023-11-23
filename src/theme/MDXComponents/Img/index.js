@@ -6,17 +6,18 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 export default function ImgWrapper(props) {
   let [expanded, setExpanded] = useState(false)
+  let [pageWrapper, setWrapper] = useState(null)
   const imageLink = useRef(null)
   
   useEffect(()=>{
-    const wrapper = document.getElementById('__docusaurus')
+    if(!pageWrapper) {
+      setWrapper(document.getElementById('__docusaurus'))
+    }
     if(expanded) {
-      wrapper.style.overflow='hidden';
-      wrapper.style.height = '100vh';
+      pageWrapper.style.overflow='hidden';
+      pageWrapper.style.height = '100vh';
     } else {
-      wrapper.style.removeProperty('overflow');
-      wrapper.style.removeProperty('height');
-      imageLink.current.scrollIntoView({block: 'center'})
+      
     }
   })
   return (
@@ -34,6 +35,9 @@ export default function ImgWrapper(props) {
           }
         >
           <button className={styles.closeOverlay} onClick={()=>{
+            pageWrapper.style.removeProperty('overflow');
+            pageWrapper.style.removeProperty('height');
+            imageLink.current.scrollIntoView({block: 'center'})
             setExpanded(false)
           }}>
             <FontAwesomeIcon icon={faXmark} />
