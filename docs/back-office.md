@@ -3,7 +3,7 @@ sidebar_label: The Back Office
 sidebar_position: 3
 ---
 
-# Introduction To Back Office
+# Introduction To Back Office (B.O)
 
 The back office refers to the administrative interface that allows authorized users like managers and system administrators to configure settings, parameters and workflows in hotelex.
 
