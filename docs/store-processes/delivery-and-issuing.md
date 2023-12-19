@@ -1,5 +1,6 @@
 ---
 sidebar_label: Stocks Delivery & Issuing
+sidebar_position: 2
 ---
 # Stocks Delivery & Issuing Process
 
@@ -43,3 +44,32 @@ Click on 'deliver' for the stock to be added to the store and appear on the 'sup
    *If you forgot to print the GRN for any reason, simply select the supplier(s) and batch(es) in question and print.*
 
 - If the [configuration](../point-of-sale/configuration.md) option *'auto_issue_delivered_stock'* is true, then any stock items once delivered will be automatically issued.
+
+## Issuing Stock
+
+Click on 'Issue' at the top left to activate the 'ISSUED STOCK' section.
+
+![Issue stocks section](/img/issue_section.PNG)
+
+Select the department to issue the stock items to.
+
+Select the specific counter (within the department) to issue the items to.
+
+Create a new batch number with 'new batch'
+
+Select the user (staff person) who will receive the stock you are issuing in the 'taken by' dropdown.
+
+Select the item to issue on the left hand side (*tip: You can search the item*).
+
+Set the quantity of stock item to issue, this is a unit of the stock item's 'small unit' and the cost is calculated by 
+Item small unit qty * items' small unit cost. Then click 'issue'
+
+Items you issue appear on the left hand side.
+
+![Items issued](/img/goods_issued.PNG)
+
+### Points to note
+
+- Be sure to print the goods issued note for every batch number you create:
+
+  ![Goods issued note](/img/gin.PNG)
