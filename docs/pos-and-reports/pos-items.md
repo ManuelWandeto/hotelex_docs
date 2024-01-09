@@ -18,6 +18,8 @@ First select a [P.O.S category](./pos-categories.md) that the item belongs to, t
 
 - For stock ingredients that aren't sold on the P.O.S side (e.g kitchen ingredients), be sure to check the 'don't sell item' option.
 
+- For items that have the same price, you may apply the same *swap code* to make it possible for waiters to [swap the items](../point-of-sale/pos-sales/swapping_items) in between orders (e.g applying the swap code 'BEER 300' on beers that cost 300 make it possible to swap then in orders).
+
 ## Secondary (2ndry) costing
 
 Secondary costing is used to track stock for items that are derived from other ingredients e.g tots from bottles.
