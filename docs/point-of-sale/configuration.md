@@ -63,3 +63,16 @@ If true, forwarding a bill will also clear the bill. Anywhere there would be a '
 
 If this is true, there will be a 'clear forwarded' button on the waiter's interface that will bring up all their [forwarded bills](./pos-cashier/live_summary#clear-individual-bills) allowing them to clear each one. Set this to true at your own risk.
 
+## primary_paybill_no
+
+The value of this setting is printed in bills as the payment details, it can either be a till number or a paybill number.  
+
+If payment is by till, the value should be placed in the following format:
+```
+primary_paybill_no=Till No, xxxxxx;
+```
+
+If payment is by paybill, the format should be as follows:
+```
+primary_paybill_no=Paybill xxxxxx, acc zzzzzz;
+```
